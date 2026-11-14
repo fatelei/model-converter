@@ -11,11 +11,14 @@
     "build:free": "vite build --mode free",
     "deploy:free": "npm run build:free && wrangler deploy -c wrangler.preview.jsonc",
     "dev:free": "vite --mode free --host 127.0.0.1",
-    "test:web": "node --test tests/archive.test.mjs"
+    "test:web": "node --test tests/archive.test.mjs",
+    "prototype:step": "vite --config vite.step-prototype.config.js --open /step-prototype.html",
+    "build:step-prototype": "vite build --config vite.step-prototype.config.js"
   },
   "dependencies": {
     "@cloudflare/containers": "latest",
     "fflate": "^0.8.2",
+    "occt-wasm": "5.17.1",
     "saxes": "^6.0.0",
     "three": "^0.180.0"
   },

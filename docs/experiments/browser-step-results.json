@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-14",
+  "environment": "Local macOS desktop, headless Chromium, local preview server; not mobile or production-network measurements",
+  "library": "occt-wasm 5.17.1",
+  "results": [
+    {
+      "name": "box",
+      "source": "step",
+      "target": "stl",
+      "triangles": 12,
+      "outputBytes": 684,
+      "convertMs": 79,
+      "solids": 1,
+      "valid": true,
+      "bounds": {
+        "xmin": 0,
+        "ymin": 0,
+        "zmin": 0,
+        "xmax": 10,
+        "ymax": 20,
+        "zmax": 30
+      },
+      "volume": 6000,
+      "wasmMemoryBytes": 134217728,
+      "initMs": 42
+    },
+    {
+      "name": "assembly",
+      "source": "step",
+      "target": "3mf",
+      "triangles": 112,
+      "outputBytes": 2045,
+      "convertMs": 105,
+      "solids": 2,
+      "valid": true,
+      "bounds": {
+        "xmin": 0,
+        "ymin": -5,
+        "zmin": 0,
+        "xmax": 35,
+        "ymax": 20,
+        "zmax": 30
+      },
+      "volume": 7570.796326795227,
+      "wasmMemoryBytes": 134217728,
+      "initMs": 40
+    },
+    {
+      "name": "box",
+      "source": "stl",
+      "target": "step",
+      "triangles": 12,
+      "outputBytes": 15480,
+      "convertMs": 127,
+      "solids": 1,
+      "valid": true,
+      "bounds": {
+        "xmin": 0,
+        "ymin": 0,
+        "zmin": 0,
+        "xmax": 10,
+        "ymax": 20,
+        "zmax": 30
+      },
+      "volume": 6000,
+      "wasmMemoryBytes": 134217728,
+      "initMs": 37
+    },
+    {
+      "name": "box",
+      "source": "3mf",
+      "target": "step",
+      "triangles": 12,
+      "outputBytes": 15480,
+      "convertMs": 143,
+      "solids": 1,
+      "valid": true,
+      "bounds": {
+        "xmin": 0,
+        "ymin": 0,
+        "zmin": 0,
+        "xmax": 10,
+        "ymax": 20,
+        "zmax": 30
+      },
+      "volume": 6000,
+      "wasmMemoryBytes": 134217728,
+      "initMs": 60
+    },
+    {
+      "name": "torus",
+      "source": "stl",
+      "target": "step",
+      "triangles": 4542,
+      "outputBytes": 10655278,
+      "convertMs": 2405,
+      "solids": 1,
+      "valid": true,
+      "bounds": {
+        "xmin": -24.97553062438965,
+        "ymin": -24.993881225585938,
+        "zmin": -5,
+        "xmax": 25,
+        "ymax": 24.993881225585938,
+        "zmax": 5
+      },
+      "volume": 9793.378620772093,
+      "wasmMemoryBytes": 134217728,
+      "initMs": 52
+    },
+    {
+      "name": "torus-medium",
+      "source": "stl",
+      "target": "step",
+      "triangles": 14964,
+      "outputBytes": 34888146,
+      "convertMs": 7785,
+      "solids": 1,
+      "valid": true,
+      "bounds": {
+        "xmin": -24.992586135864258,
+        "ymin": -24.998146057128906,
+        "zmin": -4.992667198181152,
+        "xmax": 25,
+        "ymax": 24.998146057128906,
+        "zmax": 4.992667198181152
+      },
+      "volume": 9846.417205956719,
+      "wasmMemoryBytes": 334102528,
+      "initMs": 34
+    }
+  ],
+  "openMeshRejected": true,
+  "overLimitMeshRejected": true,
+  "network": "All observed requests were same-origin GET; no model uploads"
+}

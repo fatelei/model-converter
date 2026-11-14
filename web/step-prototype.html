@@ -1,0 +1,4 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>STEP WASM 可行性原型</title></head><body>
+<h1>STEP WASM 可行性原型</h1><p>实验分支，尚未上线。模型只在浏览器处理。STL 输入按毫米解释；网格转 STEP 暂限 20,000 面。STEP → 3MF 暂时合并分组。</p>
+<input id="file" type="file" accept=".step,.stp,.stl,.3mf"><select id="target"><option value="stl">STL</option><option value="3mf">3MF</option><option value="step">STEP</option></select><button id="run">转换</button><button id="cancel" disabled>取消</button><a id="download" hidden>下载</a><pre id="status" aria-live="polite">等待文件</pre>
+<script type="module" src="/step-prototype.js"></script></body></html>
