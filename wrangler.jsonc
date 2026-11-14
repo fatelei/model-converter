@@ -1,0 +1,43 @@
+{
+  "name": "model-converter",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "containers": [
+    {
+      "class_name": "CadContainer",
+      "image": "./Dockerfile",
+      "max_instances": 1,
+      "instance_type": "standard-1"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "CAD",
+        "class_name": "CadContainer"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "CadContainer"
+      ]
+    }
+  ],
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "model.white-box.cc",
+      "custom_domain": true
+    }
+  ]
+}

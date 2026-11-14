@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.wrangler/
+__pycache__/
+.env*
+.dev.vars
+.access-key
+
+.DS_Store
+.venv/
+*.3mf
+*.stl
+*.step
+*.stp
+playwright-report/
+test-results/

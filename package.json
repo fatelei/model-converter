@@ -1,0 +1,30 @@
+{
+  "name": "model-converter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --host 127.0.0.1",
+    "check": "tsc --noEmit",
+    "deploy": "npm run build && wrangler deploy",
+    "test": "python3 -m unittest discover -s tests",
+    "build:free": "vite build --mode free",
+    "deploy:free": "npm run build:free && wrangler deploy -c wrangler.preview.jsonc",
+    "dev:free": "vite --mode free --host 127.0.0.1",
+    "test:web": "node --test tests/archive.test.mjs"
+  },
+  "dependencies": {
+    "@cloudflare/containers": "latest",
+    "fflate": "^0.8.2",
+    "saxes": "^6.0.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "@playwright/test": "latest",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  },
+  "license": "MIT"
+}
